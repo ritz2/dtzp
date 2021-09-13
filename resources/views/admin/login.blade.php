@@ -89,7 +89,10 @@
 <script type="text/javascript" src="{{asset('static/static/h-ui/js/H-ui.min.js')}}"></script>
 
 <script>
-
+    if (window.parent != window)
+    {
+        window.top.location.href = location.href;
+    }
 </script>
 
 </body>
