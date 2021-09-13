@@ -19,6 +19,7 @@ class CreateGroupIdentityTable extends Migration
             $table->tinyInteger('type')->default(1)->comment("级别");
             $table->text('privileges')->nullable()->comment("权限列表");
             $table->string('description', 64)->nullable()->comment("简单描述");
+            $table->tinyInteger('creat_id')->nullable()->default(0)->comment("创建者id");
             $table->tinyInteger('status')->default(1)->comment('状态');
             $table->timestamps();
         });

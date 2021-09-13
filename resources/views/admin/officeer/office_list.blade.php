@@ -8,12 +8,17 @@
         <table class="table table-border table-bordered table-hover table-bg">
             <thead>
             <tr>
-                <th scope="col" colspan="6">职位管理</th>
+                <th scope="col" colspan="9">职位管理</th>
             </tr>
             <tr class="text-c">
                 <th width="40">ID</th>
                 <th width="200">职位名称</th>
                 <th width="200">职位描述</th>
+                <th width="200">招聘人数</th>
+                <th width="200">职位状态</th>
+                <th width="200">招聘等级</th>
+                <th width="200">更新时间</th>
+                <th width="200">创建时间</th>
                 <th width="200">创建人</th>
                 <th width="70">操作</th>
             </tr>
@@ -24,6 +29,11 @@
                     <td>{{$v->id}}</td>
                     <td>{{$v->posts_name}}</td>
                     <td>{{$v->description}}</td>
+                    <td>{{$v->number}}</td>
+                    <td>{{$v->status}}</td>
+                    <td>{{$v->grade}}</td>
+                    <td>{{$v->created_at}}</td>
+                    <td>{{$v->updated_at}}</td>
                     <td>{{$v->creat_name}}</td>
                     <td class="f-14">
 
@@ -48,6 +58,7 @@
     <script type="text/javascript">
         /*管理员-角色-添加*/
         function admin_role_add(title,url,w,h){
+       
             layer_show(title,url,w,h);
         }
         /*管理员-角色-编辑*/

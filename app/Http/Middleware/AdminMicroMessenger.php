@@ -52,7 +52,7 @@ class AdminMicroMessenger
         }
 
         $user = $this->auth->user();
-
+        
         $items = explode('@',$routeName);
 
         try{
@@ -110,7 +110,7 @@ class AdminMicroMessenger
                 }
             }
         }
-
+            
         return "";
     }
 
